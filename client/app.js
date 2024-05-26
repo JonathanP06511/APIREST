@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3000/api/items';
+const apiUrl = process.env.API_URL || 'https://taller-apirest.herokuapp.com/api/items';
 
 async function fetchItems() {
     const response = await fetch(apiUrl);
